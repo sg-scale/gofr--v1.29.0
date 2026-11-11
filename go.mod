@@ -1,7 +1,6 @@
 module gofr.dev
 
-go 1.22
-toolchain go1.22.10
+go 1.26.0
 
 require (
 	cloud.google.com/go/pubsub v1.45.3
@@ -37,7 +36,7 @@ require (
 	go.opentelemetry.io/otel/trace v1.33.0
 	go.uber.org/mock v0.5.0
 	golang.org/x/oauth2 v0.24.0
-	golang.org/x/sync v0.10.0
+	golang.org/x/sync v0.25.0
 	golang.org/x/term v0.27.0
 	golang.org/x/text v0.21.0
 	google.golang.org/api v0.214.0
