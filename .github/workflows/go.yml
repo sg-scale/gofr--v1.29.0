@@ -57,7 +57,7 @@ jobs:
 
     steps:
       - name: Checkout code into go module directory
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
@@ -97,7 +97,7 @@ jobs:
 
     steps:
       - name: Checkout code into go module directory
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
@@ -131,7 +131,7 @@ jobs:
     needs: [ Example-Unit-Testing,PKG-Unit-Testing]
     steps:
       - name: Check out code into the Go module directory
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Download Coverage Report
         uses: actions/download-artifact@v4
@@ -166,7 +166,7 @@ jobs:
 
     steps:
       - name: Checkout code into go module directory
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
@@ -212,7 +212,7 @@ jobs:
     if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/development'}}
     steps:
       - name: Check out code into the Go module directory
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Download Coverage Report
         uses: actions/download-artifact@v4
@@ -239,7 +239,7 @@ jobs:
     container: "golangci/golangci-lint:v1.62.0"
     steps:
       - name: Check out code into the Go module directory
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
       - name: Get dependencies
         run: go get -v -t -d ./...
       - name: Lint Root Module
@@ -262,7 +262,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
       - name: Check for file names errors
         uses: ls-lint/action@v2.2.3
         with:
