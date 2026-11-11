@@ -264,6 +264,6 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v4
       - name: Check for file names errors
-        uses: ls-lint/action@v2.2.3
+        uses: ls-lint/action@v2.3.2
         with:
           config: .ls-lint.yml
