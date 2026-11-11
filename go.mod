@@ -1,7 +1,6 @@
 module gofr.dev
 
-go 1.22
-toolchain go1.22.10
+go 1.23
 
 require (
 	cloud.google.com/go/pubsub v1.45.3
@@ -42,7 +41,7 @@ require (
 	golang.org/x/text v0.21.0
 	google.golang.org/api v0.214.0
 	google.golang.org/grpc v1.69.0
-	google.golang.org/protobuf v1.36.1
+	google.golang.org/protobuf v1.36.12
 	modernc.org/sqlite v1.34.4
 )
 
@@ -64,7 +63,7 @@ require (
 	github.com/go-logr/logr v1.4.2 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
-	github.com/google/go-cmp v0.6.0 // indirect
+	github.com/google/go-cmp v0.7.0 // indirect
 	github.com/google/s2a-go v0.1.8 // indirect
 	github.com/googleapis/enterprise-certificate-proxy v0.3.4 // indirect
 	github.com/googleapis/gax-go/v2 v2.14.0 // indirect
